@@ -4,6 +4,5 @@ pandas
 numpy                                   
 datetime 
 matplotlib  
-random
 calendar
 re
