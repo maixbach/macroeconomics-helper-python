@@ -260,7 +260,7 @@ if add_selectbox == 'One-click Report': # raise an update inform
         st.write("""**One-click report** is an **automatic economic report maker** using APIs to extract real-time data 
                  from World Bank and instantly make a basic analysis of any country, which is in Asia and the Pacific, 's economic situation.""")
         st.caption("Sources of data: Consensus Economics, The World Bank, UN Comtrade, Haver Analytics, and National Sources")
-        st.write("""We will update the latest version soon.""")
+        st.write("""We will update the latest version soon. Thank you for waiting us!""")
         
   
 if add_selectbox == 'One-click report': # need to fix the access to dataset later
