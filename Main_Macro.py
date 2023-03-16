@@ -254,8 +254,16 @@ def display_unemployment_inflation():
 ####                                DISPLAY ONE-CLICK REPORT SECTION                         ####
 #################################################################################################   
 
-if add_selectbox == 'One-click Report':
-    
+if add_selectbox == 'One-click Report': # raise an update inform
+      with bd:
+        st.header(f" {add_selectbox}!")
+        st.write("""**One-click report** is an **automatic economic report maker** using APIs to extract real-time data 
+                 from World Bank and instantly make a basic analysis of any country, which is in Asia and the Pacific, 's economic situation.""")
+        st.caption("Sources of data: Consensus Economics, The World Bank, UN Comtrade, Haver Analytics, and National Sources")
+        st.write("""We will update the latest version soon.""")
+        
+  
+if add_selectbox == 'One-click report': # need to fix the access to dataset later
     with bd:
         st.header(f" {add_selectbox}!")
         st.write("""**One-click report** is an **automatic economic report maker** using APIs to extract real-time data 
@@ -417,7 +425,6 @@ if add_selectbox == 'One-click Report':
 #To make pyplot working      
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
- 
 
 
 #################################################################################################
