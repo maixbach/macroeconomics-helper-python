@@ -8,7 +8,7 @@ Created on Tue Dec  7 15:08:28 2021
 ####         A web app to help student know and solving any problem in Macroeconomics 
                                     #Author: Mai Xuan Bach                                  ####
 ################################################################################################
-!pip install openpyxl
+pip install openpyxl
 
 import streamlit as st
 from streamlit_player import st_player
