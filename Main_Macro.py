@@ -20,7 +20,7 @@ from matplotlib import ticker
 import random
 import calendar
 import re
-import openpyxl
+# import openpyxl
 
 #Import form func_solver.py for some function needed
 from func_solver import *
