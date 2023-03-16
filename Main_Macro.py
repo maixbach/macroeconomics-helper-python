@@ -265,7 +265,7 @@ if add_selectbox == 'One-click Report':
         
         #Let user input the name and turn it into ADB code for running
         
-        adf = pd.read_excel(r'https://raw.githubusercontent.com/maixbach/pythonproject_final_mxbach/blob/main/data/all_data.xlsx' , sheet_name = "data")
+        adf = pd.read_excel(r'https://raw.githubusercontent.com/maixbach/pythonproject_final_mxbach/main/data/all_data.xlsx' , sheet_name = "data")
         adb_code_lst = adf["adb_code"].tolist()
         adb_country_lst = adf["country_name"].tolist()
         name_country = st.sidebar.text_input("Name of country in area of Asia and the Pacific for economic analysis")
@@ -308,10 +308,10 @@ if add_selectbox == 'One-click Report':
             data_date = dt.datetime(dt.date.today().year - 6, 1, 1), dt.datetime(dt.date.today().year - 0, 1, 1)
             
             # Read Excel file of country codes and country names
-            country_codes = pd.read_excel(r'https://raw.githubusercontent.com/maixbach/pythonproject_final_mxbach/blob/main/data/all_data.xlsx',  sheet_name='data', index_col= 'adb_code')
+            country_codes = pd.read_excel(r'https://raw.githubusercontent.com/maixbach/pythonproject_final_mxbach/main/data/all_data.xlsx',  sheet_name='data', index_col= 'adb_code')
             
             # Read Excel file 
-            policy_rate_annual = pd.read_excel(r'https://raw.githubusercontent.com/pythonproject_final_mxbach/blob/main/data/quarterly_monthly_data.xlsx',   sheet_name=country, header=8, index_col=0, usecols='AH:AI', parse_dates=['year']).dropna()
+            policy_rate_annual = pd.read_excel(r'https://raw.githubusercontent.com/maixbach/pythonproject_final_mxbach/main/data/quarterly_monthly_data.xlsx',   sheet_name=country, header=8, index_col=0, usecols='AH:AI', parse_dates=['year']).dropna()
             
             
             
